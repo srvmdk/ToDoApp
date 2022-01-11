@@ -1,0 +1,103 @@
+body {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.main {
+	border: 1px solid grey;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	width: 300px;
+}
+
+#create-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#create-container > h3 {
+	color: rgb(119, 88, 88);
+	margin: 0;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#create-container > input {
+	height: 1.5rem;
+	margin-bottom: 5px;
+}
+
+#create-container > button {
+	background-color: rgb(134, 194, 134);
+	border-radius: 20px;
+	color: black;
+	height: 2rem;
+	width: 4.5rem;
+}
+
+#tasks {
+	background-color: rgba(214, 212, 212, 0.603);
+	border-radius: 5px;
+	list-style-type: none;
+	padding: 5px;
+	height: 15rem;
+	overflow: auto;
+	width: 300px;
+}
+
+li {
+	border: 1px solid grey;
+	border-radius: 5px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 300px;
+	margin: 5px 0;
+}
+
+li > .actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	width: 100px;
+}
+
+li > .content {
+	display: flex;
+	align-items: center;
+}
+
+.done {
+	color: gray;
+	text-decoration: line-through;
+}
+
+.edit-task > input {
+	margin: 5px;
+	border: none;
+	outline: none;
+}
+
+.edit-task > button {
+	margin: 5px;
+}
+
+#reset-btn {
+	background-color: rgb(223, 103, 103);
+	border-radius: 20px;
+	height: 2rem;
+	width: 100%;
+}
+
+img {
+	width: 300px;
+	aspect-ratio: 16/9;
+}
